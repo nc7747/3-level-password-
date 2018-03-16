@@ -17,7 +17,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 				?>
 				<script>
 				alert("OTP verificatin success");
-				document.location = "thankyou.html"
+				document.location = "thankyou.php"
 				</script>
 				<?php
 			}
