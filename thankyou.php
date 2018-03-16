@@ -1,3 +1,13 @@
+<?php
+if (!isset($_SERVER['HTTP_REFERER'])){ 
+?>
+<script>
+alert('no cheating dude');
+document.location = "login.html"
+</script>
+<?php 
+}
+?>
 <!doctype html>
 <head>
 <title>Three Level Password Authentication</title>
