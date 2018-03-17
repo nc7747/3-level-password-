@@ -13,6 +13,8 @@ document.location = "signup.html"
 	echo $user;
 	echo $pattern;
 	$conn=new mysqli("localhost","root","","authentication")or die("mysqli_error()");
+	$sqlcreate = "CREATE TABLE IF NOT EXISTS pattern ( `id` INT(100) NOT NULL AUTO_INCREMENT , `username` VARCHAR(100) NOT NULL , `pattern` VARCHAR(50) NOT NULL , PRIMARY KEY (`id`, `username`)) ENGINE = InnoDB;";
+	mysqli_query($conn,$sqlcreate);
 	$sql= "INSERT into pattern(username, pattern) values('$user','$pattern')";
 	if(mysqli_query($conn,$sql)){
 	header("location:signupotpgenerate.php");}
