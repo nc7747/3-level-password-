@@ -1,4 +1,4 @@
-# three-level-password-authentication
+# Three-Factor-authentication
 
 ## Requirements:
 * `XAMPP` start apache and mysql
